@@ -1,0 +1,149 @@
+@charset="utf-8"; 
+
+/*required*/
+
+* { margin: 0; padding: 0; }
+
+html { font-size: 100%; }
+
+body { font-family:  "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif; }
+
+img { width: 100%; }
+
+.body-wrapper { overflow: hidden; }
+
+/*global*/
+
+.sub_title { 
+	font-size: 28px; 
+	font-weight: 600; 
+	line-height: 51px; 
+}
+
+btn { 
+	border-radius: 100vh; 
+	background-color: rgb(218,107,100); 
+	opacity: .8; 
+}
+
+/*header*/
+
+.header {
+	max-height: 730px; 
+}
+
+navbar {
+	margin: 0 8%; 
+	max-height: 80px; 
+	max-width: 
+}
+.nav_container { justify-content: space-between !important; margin: 0 3%; }
+
+.navbar .navbar-brand { width: 155px; height: auto; max-height: 59px; margin-right: 0.5rem !important;}
+
+.nav_item p { font-size: 14px; font-weight: 600; line-height: 22px; margin-bottom: 0;}
+
+.header_container {
+	padding: 7% 0 5% 0; 
+	background-image: url('../img/main.jpg');
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	min-height: 70vh; 
+	max-height: 71vh; 
+}
+
+.header_item {
+	text-align: center !important; 
+	margin: 0 auto;
+	max-width: 80vw; 
+	height: auto; 
+}
+
+.header_item img { max-width: 286px; max-height: 128px; }
+
+.header_item p { 
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+.header_item space { margin-top: 3%; }
+
+.header btn {
+	width: 317px; 
+	height: 44px; 
+}
+
+/**headerのnav_item（logoとp）が完璧に横並びにならない**/
+
+/*ipad pro*/
+@media (max-width: 1050px) {
+	/*global*/
+
+	.sub_title { 
+		font-size: 24px; 
+		line-height: 45px; 
+	}
+	
+	/*header*/
+	.navbar {max-height: 76px; margin: 0; }
+	
+	.nav_container { justify-content: space-between !important; margin: 0 2%;}
+	
+	.header_container {
+		padding: 7% 0 5% 0; 
+		background-image: url('../img/mainsp.jpg');
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		min-height: 48vh;
+		max-height: 49vh; 
+	}
+	
+	.nav_item p { font-size: 10px; line-height: 16px; }
+	
+	.navbar .navbar-brand { width: 105px; height: 45px; }
+	
+	.header btn {
+		width: 243px; 
+		height: 46px; 
+	}
+}
+
+/*iphone*/
+@media (max-width: 786px) {
+	/*global*/
+	
+	.sub_title { 
+		font-size: 18px; 
+		line-height: 29px; 
+	}
+	
+	/*header*/
+	.navbar { margin: 0;  }
+	
+	.nav_container { justify-content: space-between !important; margin: 0;}
+	
+	.header_container {
+		padding: 10% 0 5% 0; 
+		background-image: url('../img/mainsp.jpg');
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		min-height: 41vh; 
+	}
+
+	.navbar .navbar-brand { width: 105px; height: 45px; }
+	
+	.header_item p { 
+		font-size: 15px;
+		line-height: 17px;
+	}
+
+
+
+	
+}
+
+
