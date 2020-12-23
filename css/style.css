@@ -23,7 +23,12 @@ img { width: 100%; }
 btn { 
 	border-radius: 100vh; 
 	background-color: rgb(218,107,100); 
-	opacity: .8; 
+	opacity: .9; 
+}
+
+btn:hover {
+	opacity: 1; 
+	transition: background 1s; 
 }
 
 /*header*/
@@ -33,15 +38,15 @@ btn {
 }
 
 navbar {
+	position: fixed; 
 	margin: 0 8%; 
 	max-height: 80px; 
-	max-width: 
 }
-.nav_container { justify-content: space-between !important; margin: 0 3%; }
+.nav_container { justify-content: space-between !important; margin: 0 10%; }
 
 .navbar .navbar-brand { width: 155px; height: auto; max-height: 59px; margin-right: 0.5rem !important;}
 
-.nav_item p { font-size: 14px; font-weight: 600; line-height: 22px; margin-bottom: 0;}
+.nav_item1 p { font-size: 14px; font-weight: 600; line-height: 22px; margin-bottom: 0;}
 
 .header_container {
 	padding: 7% 0 5% 0; 
@@ -71,9 +76,23 @@ navbar {
 .header_item space { margin-top: 3%; }
 
 .header btn {
+	position: relative; 
 	width: 317px; 
 	height: 44px; 
 }
+
+.header btn::before {
+	position: absolute; 
+	content: "お問い合わせ / 資料請求はこちら";
+	font-weight: 400; 
+	font-size: 14px; 
+	letter-spacing: .1rem;
+	color: #fff; 
+	left: 12%;
+	top: 24%;
+}
+
+.header btn::before: hover { opacity: .8; }
 
 /**headerのnav_item（logoとp）が完璧に横並びにならない**/
 
@@ -101,7 +120,7 @@ navbar {
 		max-height: 49vh; 
 	}
 	
-	.nav_item p { font-size: 10px; line-height: 16px; }
+	.nav_item1 p { font-size: 10px; line-height: 16px; }
 	
 	.navbar .navbar-brand { width: 105px; height: 45px; }
 	
@@ -109,19 +128,30 @@ navbar {
 		width: 243px; 
 		height: 46px; 
 	}
+	
+	
+	.header btn::before {
+		position: absolute; 
+		content: "お問い合わせ / 資料請求はこちら";
+		font-weight: 400; 
+		font-size: 12px; 
+		color: #fff; 
+		left: 9%;
+		top: 29%;
+	}
 }
 
 /*iphone*/
 @media (max-width: 786px) {
 	/*global*/
-	
+
 	.sub_title { 
 		font-size: 18px; 
 		line-height: 29px; 
 	}
 	
 	/*header*/
-	.navbar { margin: 0;  }
+	.navbar { max-height: 62px; margin: 0; padding: 0; }
 	
 	.nav_container { justify-content: space-between !important; margin: 0;}
 	
@@ -141,7 +171,37 @@ navbar {
 		line-height: 17px;
 	}
 
+	.header btn {
+		border-radius: 0 !important; 
+		position: relative; 
+		width: 90px; 
+		height: 62px; 
+	}
 
+	.header btn::before {
+		position: absolute; 
+		content: "資料請求";
+		font-weight: 400; 
+		font-size: 12px; 
+		letter-spacing: .1rem;
+		color: #fff; 
+		left: 14%;
+		top: 68%;
+	}
+	
+	.header btn::after {
+		position: absolute; 
+		content: '';
+		background: url(../img/form.png);
+		background-repeat: no-repeat; 
+		background-size: contain;
+		display: inline-block;
+		width: 2.3em;
+		height: 1.85em; 
+		color: #fff;
+		left: 30%;
+		top: 12%;
+	}
 
 	
 }
