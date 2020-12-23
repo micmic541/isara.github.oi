@@ -23,7 +23,7 @@ img { width: 100%; }
 btn { 
 	border-radius: 100vh; 
 	background-color: rgb(218,107,100); 
-	opacity: .9; 
+	opacity: .85;
 }
 
 btn:hover {
