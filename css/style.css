@@ -23,13 +23,15 @@ img { width: 100%; }
 btn { 
 	border-radius: 100vh; 
 	background-color: rgb(218,107,100); 
-	opacity: .85;
 }
 
 btn:hover {
-	opacity: 1; 
-	transition: background 1s; 
+	background-color: #d84940; 
 }
+
+a { color: #fff; text-decoration: none; }
+
+btn a:hover { color: #fff; text-decoration: none;}
 
 /*header*/
 
@@ -38,13 +40,12 @@ btn:hover {
 }
 
 navbar {
-	position: fixed; 
 	margin: 0 8%; 
 	max-height: 80px; 
 }
 .nav_container { justify-content: space-between !important; margin: 0 10%; }
 
-.navbar .navbar-brand { width: 155px; height: auto; max-height: 59px; margin-right: 0.5rem !important;}
+.navbar .navbar-brand { width: 155px; height: auto; max-height: 56px; margin-right: 0.5rem !important;}
 
 .nav_item1 p { font-size: 14px; font-weight: 600; line-height: 22px; margin-bottom: 0;}
 
@@ -94,6 +95,62 @@ navbar {
 
 .header btn::before: hover { opacity: .8; }
 
+
+/*orange*/
+
+.orange {
+	background-color: rgb(235,185,77); 
+	max-height: 766px; 
+	text-align: center; 
+	margin: 0 auto; 
+	color: #fff; 
+}
+
+.text_box1 {
+	font-size: 20px; 
+	font-weight: 600; 
+	line-height: 32px; 
+}
+
+.text_box1 .cat {
+	display: inline-block;
+	color: #c7254e; 
+	font-size: 18px; 
+	line-height: 29px; 
+	background: rgb(249,242,244); 
+	border-radius: 5px; 
+}
+
+
+.text_box2 {
+	font-size: 21px; 
+	font-weight: 600; 
+	line-height: 34px; 
+}
+
+.text_box2 br { display: none; }
+
+.orange btn {
+	font-size: 28px; 
+	font-weight: 600;
+	line-height: 45px; 
+	width: 1030px; 
+	height: 97px; 
+}
+
+.sns_box p, .sns_box　a {
+	font-size: 13px;
+	font-weight: 530; 
+	border-radius: 5px; 
+	background: rgb(24,119,242); 
+}
+
+.sns_box .my_twitter { background: rgb(27,149,224); }
+
+
+
+
+/**iPad Proの時header_itemが中央にいかない**/
 /**headerのnav_item（logoとp）が完璧に横並びにならない**/
 
 /*ipad pro*/
@@ -106,7 +163,7 @@ navbar {
 	}
 	
 	/*header*/
-	.navbar {max-height: 76px; margin: 0; }
+	.navbar {max-height: 66px; margin: 0; }
 	
 	.nav_container { justify-content: space-between !important; margin: 0 2%;}
 	
@@ -116,8 +173,8 @@ navbar {
 		background-position: center; 
 		background-repeat: no-repeat; 
 		background-size: cover; 
-		min-height: 48vh;
-		max-height: 49vh; 
+		min-height: 56vh;
+		max-height: 56vh; 
 	}
 	
 	.nav_item1 p { font-size: 10px; line-height: 16px; }
@@ -139,6 +196,31 @@ navbar {
 		left: 9%;
 		top: 29%;
 	}
+	
+	/*orange*/
+	
+	.text_box1 {
+		font-size: 16px; 
+		font-weight: 600; 
+		line-height: 26px; 
+	}
+	
+	.text_box1 .cat {
+		font-size: 15px;
+		font-weight: 550; 
+		line-height: 23px; 
+	}
+	
+	.orange btn {
+		font-size: 18px; 
+		line-height: 29px; 
+		height: 81px; 
+	}
+	
+	.text_box2 {
+		font-size: 18px; 
+		line-height: 29px; 
+	}
 }
 
 /*iphone*/
@@ -151,7 +233,7 @@ navbar {
 	}
 	
 	/*header*/
-	.navbar { max-height: 62px; margin: 0; padding: 0; }
+	.navbar { max-height: 59px; margin: 0; padding: 0; }
 	
 	.nav_container { justify-content: space-between !important; margin: 0;}
 	
@@ -174,8 +256,8 @@ navbar {
 	.header btn {
 		border-radius: 0 !important; 
 		position: relative; 
-		width: 90px; 
-		height: 62px; 
+		width: 84px; 
+		height: 59px; 
 	}
 
 	.header btn::before {
@@ -202,7 +284,28 @@ navbar {
 		left: 30%;
 		top: 12%;
 	}
-
+	
+	/*orange*/
+	
+	.text_box2 br { display: inline; }
+	
+	.text_box1 {
+		font-size: 15px; 
+		font-weight: 600; 
+		line-height: 24px; 
+	}
+	
+	.text_box1 .cat {
+		font-size: 14px;
+		font-weight: 550; 
+		line-height: 22px; 
+	}
+	
+	
+	.text_box2 {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
 	
 }
 
