@@ -31,7 +31,7 @@ btn:hover {
 
 a { color: #fff; text-decoration: none; }
 
-btn a:hover { color: #fff; text-decoration: none;}
+a:hover { color: #fff; text-decoration: none;}
 
 /*header*/
 
@@ -146,6 +146,8 @@ navbar {
 }
 
 .sns_box .my_twitter { background: rgb(27,149,224); }
+
+.sns_box a:hover { opacity: .8; }
 
 
 
