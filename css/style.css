@@ -221,9 +221,10 @@ navbar {
 	background: linear-gradient(transparent 60%, #ffa500 0%);
 }
 
-/**iPad Proの時header_itemが中央にいかない**/
+
+
+/**conceptの「」うまく動かせない**/
 /**headerのnav_item（logoとp）が完璧に横並びにならない**/
-/**iPadとiPad proの#conceptの縦の長さ、だけを小さくするのは不可能か？**/
 
 /*ipad pro*/
 @media (max-width: 1050px) {
@@ -293,6 +294,8 @@ navbar {
 		font-size: 18px; 
 		line-height: 29px; 
 	}
+	
+	
 	
 	/*concept*/
 	
@@ -443,6 +446,80 @@ navbar {
 		line-height: 24px; 
 	}
 	
+}
+
+
+
+/*iPhoneX. iPhone6Plus. Pixel2 XL*/
+@media(min-height: 730px) and (max-height: 824px) {
+	/*concepr*/
+	#concept {
+		height: auto; 
+		min-height: 86vh; 
+	}
+}
+
+/*iPad iPadPro*/
+@media(min-height: 1022px) and (max-height: 1368px) {
+	
+	/*header*/
+	
+	.header_container {
+		padding: 7% 0 5% 0;
+		background-image: url(../img/mainsp.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 34vh;
+		max-height: 56vh;
+	}
+	
+	/*orange*/
+	
+	.orange btn {
+		font-size: 18px; 
+		line-height: 29px; 
+		height: 81px; 
+	}
+	
+	.text_box2 {
+		font-size: 18px; 
+		line-height: 29px; 
+	}
+	
+	
+	/*concepr*/
+	#concept {
+		height: auto; 
+		min-height: 45vh; 
+	}
+	
+	.sub_title::before {
+		top: -25%;
+		left: 15%;
+	}
+
+	.sub_title::after {
+		bottom: 27%;
+		right: 14%;
+	}
+	
+	.text_box3 { 
+		font-size: 16px; 
+		font-weight: 300; 
+		line-height: 26px; 
+		max-width: 100%;
+	}
+	
+	.underline { 
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+	
+	.sub_title br { display: none; }
+	
+	.brsp { display: none; }
+
 }
 
 
