@@ -66,6 +66,8 @@ navbar {
 	height: auto; 
 }
 
+.header_item .sub_title br { display: inline !important; }
+
 .header_item img { max-width: 286px; max-height: 128px; }
 
 .header_item p { 
@@ -150,10 +152,78 @@ navbar {
 .sns_box a:hover { opacity: .8; }
 
 
+/*concept*/
 
+.concept {
+	max-height: 734px; 
+	text-align: center; 
+	margin: 0 auto; 
+}
+
+#concept {
+	background-image: url('../img/introbottom.jpg');
+	background-position: center; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	min-height: 76vh; 
+}
+
+.concept_item { 
+	margin: 4% 0; 
+	position: relative;
+}
+
+.sub_title::before {
+	position: absolute; 
+	content: "";
+	top: -69%;
+    left: 21%;
+    border-top: 4px solid #ebb94d;
+    border-left: 4px solid #ebb94d;
+}
+
+.sub_title::after {
+	position: absolute; 
+	content: "";
+	bottom: -27%;
+    right: 21%;
+    border-bottom: 4px solid #ebb94d;
+    border-right: 4px solid #ebb94d;
+}
+
+.sub_title::before, 
+.sub_title::after { width: 50px; height: 50px; box-sizing: border-box; }
+
+.sub_title { 
+	text-align: center; 
+	margin: 0 auto; 
+	max-width: 1088px; 
+	max-height: 160px; 
+}
+
+.sub_title br { display: none; }
+
+.text_box3 {
+	font-size: 20px; 
+	font-weight: 300; 
+	line-height: 32px; 
+	margin: 0 auto; 
+	max-width: 1088px; 
+	text-align: center; 
+}
+
+.brsp { display: none; }
+
+.underline { 
+	font-size: 20px; 
+	font-weight: 700; 
+	line-height: 32px; 
+	background: linear-gradient(transparent 60%, #ffa500 0%);
+}
 
 /**iPad Proの時header_itemが中央にいかない**/
 /**headerのnav_item（logoとp）が完璧に横並びにならない**/
+/**iPadとiPad proの#conceptの縦の長さ、だけを小さくするのは不可能か？**/
 
 /*ipad pro*/
 @media (max-width: 1050px) {
@@ -223,6 +293,39 @@ navbar {
 		font-size: 18px; 
 		line-height: 29px; 
 	}
+	
+	/*concept*/
+	
+	#concept {
+		min-height: 72vh; 
+	}
+	
+	.sub_title::before {
+		top: 0%;
+		left: 0%;
+	}
+
+	.sub_title::after {
+		bottom: 9%;
+		right: 0%;
+	}
+	
+	.sub_title::before, 
+	.sub_title::after { width: 30px; height: 30px; }
+	
+	.text_box3 { 
+		font-size: 16px; 
+		font-weight: 300; 
+		line-height: 26px; 
+		max-width: 100%;
+	}
+	
+	.underline { 
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	
 }
 
 /*iphone*/
@@ -298,14 +401,45 @@ navbar {
 	}
 	
 	.text_box1 .cat {
-		font-size: 14px;
-		font-weight: 550; 
-		line-height: 22px; 
+		font-size: .65rem;
+		line-height: 20px; 
 	}
 	
+	.orange btn {
+		font-size: 1rem; 
+		line-height: 29px; 
+		height: 81px; 
+	}
 	
 	.text_box2 {
 		font-size: 15px; 
+		line-height: 24px; 
+	}
+	
+	/*concept*/
+	
+	#concept {
+		height: auto; 
+		min-height: 110vh; 
+	}
+	
+	#concept .sub_title {
+		font-size: 18px; 
+		line-height: 40px; 
+	}
+	
+	.sub_title br { display: inline; }
+	
+	.brsp { display: block; }
+	
+	.text_box3 { 
+		font-size: .895rem; 
+		line-height: 24px; 
+		max-width: 100%;
+	}
+	
+	.underline { 
+		font-size: .895rem; 
 		line-height: 24px; 
 	}
 	
