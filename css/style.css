@@ -10,7 +10,7 @@ body { font-family:  "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sa
 
 img { width: 100%; }
 
-.body_wrap { overflow: visible; }
+
 
 /*global*/
 
@@ -168,25 +168,24 @@ navbar {
 	min-height: 76vh; 
 }
 
-.concept_item { 
+.concept_item {
 	margin: 4% 0; 
-	position: relative;
 }
 
-.sub_title::before {
+.concept_item .sub_title::before {
 	position: absolute; 
 	content: "";
-	top: -69%;
-    left: 21%;
+	top: 0;
+    left: 0;
     border-top: 4px solid #ebb94d;
     border-left: 4px solid #ebb94d;
 }
 
-.sub_title::after {
+.concept_item .sub_title::after {
 	position: absolute; 
 	content: "";
-	bottom: -27%;
-    right: 21%;
+	bottom: 0;
+    right: 0;
     border-bottom: 4px solid #ebb94d;
     border-right: 4px solid #ebb94d;
 }
@@ -195,10 +194,11 @@ navbar {
 .sub_title::after { width: 50px; height: 50px; box-sizing: border-box; }
 
 .sub_title { 
-	text-align: center; 
-	margin: 0 auto; 
-	max-width: 1088px; 
-	max-height: 160px; 
+	position: relative;
+	text-align: center;
+    margin: 0 auto;
+    max-width: 1088px;
+    max-height: 160px;
 }
 
 .sub_title br { display: none; }
@@ -258,33 +258,106 @@ navbar {
 /*about*/
 
 .about .wrapper {
-	padding: 8% 2% 3% 2%; 
-	max-width: 1640px; 
-	max-height: 810px; 
+	background-color: rgb(254,245,224); 
+	padding: 8% 2%; 
 }
 
-.flex_box {
-	border: 2px rgb(235,185,77) solid; 
-	border-radius: 5px; 
+.about_item { 
+	margin: 0 auto; 
+	position: relative;
+	max-width: 860px; 
+	max-height: 140px; 
+}
+
+.about_item .sub_title h2 { 
+	text-align: center; 
+}
+
+.about_item .sub_title::before {
+	position: absolute; 
+	content: '';
+	box-sizing: border-box; 
+	top: 0; 
+	left: 0; 
+	width: 50px; 
+	height: 50px; 
+	border-top: 4px solid #ebb94d;
+    border-left: 4px solid #ebb94d;
+}
+
+.about_item .sub_title::after {
+	position: absolute; 
+	content: '';
+	box-sizing: border-box; 
+	bottom: 0; 
+	right: 0; 
+	width: 50px; 
+	height: 50px; 
+	border-bottom: 4px solid #ebb94d;
+    border-right: 4px solid #ebb94d;
+}
+
+.about_item .sub_title br { display: inline-block; }
+
+.about_box p {
+	text-align: center; 
+	font-size: 20px; 
+	font-weight: 600; 
+	line-height: 32px; 
+}
+
+.about_box br { display: none; }
+
+.flex_title h4 {
+	font-size: 20px; 
+	font-weight: 600; 
+	line-height: 32px; 
 }
 
 .flex_title br { display: none; }
 
-.flex_item .item1 img, 
-.flex_item .item3 img, 
-.flex_item .item4 img {
+
+.about .flex_box {
+	background-color: #fff; 
+	margin: 0 auto; 
+	text-align: center; 
+	max-width: 1170px; 
+	min-height: 260px; 
+	max-height: 385px; 
+	border: 2px rgb(235,185,77) solid; 
+	border-radius: 5px; 
+}
+
+.about .flex_item {
+	margin: 0 auto; 
+	text-align: center; 
+	max-width: 754px; 
+	min-height: 197px; 
+	max-height: 380px; 
+	font-size: 12px; 
+	line-height: 19px; 
+	font-weight: 300; 
+}
+
+.about .flex_item .item2, 
+.about .flex_item .item4 {
+	margin: 0 3%; 
+}
+
+.about .flex_item .item1 img, 
+.about .flex_item .item3 img, 
+.about .flex_item .item4 img {
 	width: 3.2rem; 
 }
 
-.flex_item .item2 img { width: 4.5rem; }
+.about .flex_item .item2 img { width: 4.5rem; }
 
-.flex_item .item5 img { width: 8rem; }
+.about .flex_item .item5 img { width: 8rem; }
 
 
 /**注１.@media(min-height: 720px) and (max-height: 824px) の、
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
-/**注2. conceptの「」うまく動かせない**/
-/**注３. headerのnav_item（logoとp）が完璧に横並びにならない**/
+/**注2. headerのnav_item（logoとp）が完璧に横並びにならない**/
 
 /*etc----------------------*/
 @media (max-width: 1050px) {
@@ -391,6 +464,39 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	/*about*/
 	
 	.flex_title br { display: inline; }
+	
+	.about_box p {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.flex_title h4 {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.about .flex_box {
+		max-height: 218px; 
+	}
+
+	.about .flex_item {
+		max-height: 216px; 
+	}
+
+	.about .flex_item .item2, 
+	.about .flex_item .item4 {
+		margin: 0 2%; 
+	}
+
+	.about .flex_item .item1 img, 
+	.about .flex_item .item3 img, 
+	.about .flex_item .item4 img {
+		width: 3rem; 
+	}
+
+	.about .flex_item .item2 img { width: 4.2rem; }
+
+	.about .flex_item .item5 img { width: 7.2rem; }
 
 	
 }
@@ -541,6 +647,103 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		z-index: 0;
 	}
 	
+	/*about*/
+	
+	.about .wrapper {
+		padding: 20% 2%; 
+	}
+
+	.about_item { 
+		margin: 0 auto; 
+		position: relative;
+		max-width: 860px; 
+		max-height: 140px; 
+	}
+
+	.about_item .sub_title h2 { 
+		font-size: 18px; 
+		line-height: 40px; 
+	}
+
+	.about_item .sub_title::before {
+		position: absolute; 
+		content: '';
+		box-sizing: border-box; 
+		top: 0; 
+		left: 0; 
+		width: 30px; 
+		height: 30px; 
+		border-top: 4px solid #ebb94d;
+		border-left: 4px solid #ebb94d;
+	}
+
+	.about_item .sub_title::after {
+		position: absolute; 
+		content: '';
+		box-sizing: border-box; 
+		bottom: 0; 
+		right: 0; 
+		width: 30px; 
+		height: 30px; 
+		border-bottom: 4px solid #ebb94d;
+		border-right: 4px solid #ebb94d;
+	}
+
+	.about_item .sub_title br { display: inline-block !important; }
+
+	.about_box p {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
+	
+	.about_box br { display: inline !important; }
+
+	.flex_title h4 {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
+
+	.flex_title br { display: inline; }
+
+
+	.about .flex_box {
+		background-color: #fff; 
+		margin: 0 auto; 
+		text-align: center; 
+		max-width: 1170px; 
+		min-height: 260px; 
+		max-height: 399px; 
+		border: 2px rgb(235,185,77) solid; 
+		border-radius: 5px; 
+	}
+
+	.about .flex_item {
+		margin: 0 auto; 
+		text-align: center; 
+		max-width: 754px; 
+		min-height: 197px; 
+		max-height: 380px; 
+		font-size: 12px; 
+		line-height: 19px; 
+		font-weight: 300; 
+	}
+
+	.about .flex_item .item2, 
+	.about .flex_item .item4 {
+		margin: 0 2%; 
+	}
+
+	.about .flex_item .item1 img, 
+	.about .flex_item .item3 img, 
+	.about .flex_item .item4 img {
+		width: 2rem; 
+	}
+
+	.about .flex_item .item2 img { width: 3.2rem; }
+
+	.about .flex_item .item5 img { width: 5rem; }
+
+		
 }
 
 
@@ -677,6 +880,46 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	.circle {
 		position: relative; 
 	}
+	
+	/*about*/
+	
+	.about .wrapper {
+		padding: 8% 2%; 
+	}
+	
+	.about_box p {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.flex_title h4 {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.about .flex_box {
+		max-height: 218px; 
+	}
+
+	.about .flex_item {
+		max-height: 216px; 
+	}
+
+	.about .flex_item .item2, 
+	.about .flex_item .item4 {
+		margin: 0 2%; 
+	}
+
+	.about .flex_item .item1 img, 
+	.about .flex_item .item3 img, 
+	.about .flex_item .item4 img {
+		width: 3rem; 
+	}
+
+	.about .flex_item .item2 img { width: 4.2rem; }
+
+	.about .flex_item .item5 img { width: 7.2rem; }
+		
 }
 
 /*Surface Duo-------------------------------------------*/
@@ -702,6 +945,13 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		left: 43%;
 		padding: 5.8%;
 	}
+	
+	/*about*/
+	
+	.about .wrapper {
+		padding: 8% 2%; 
+	}
+	
 
 }
 
