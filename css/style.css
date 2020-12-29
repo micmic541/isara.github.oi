@@ -262,7 +262,8 @@ navbar {
 	padding: 8% 2% 5% 2%; 
 }
 
-.about_item { 
+.about_item, 
+.merit_item { 
 	margin: 0 auto; 
 	position: relative;
 	max-width: 860px; 
@@ -273,7 +274,8 @@ navbar {
 	text-align: center; 
 }
 
-.about_item .sub_title::before {
+.about_item .sub_title::before,
+.merit_item .sub_title::before {
 	position: absolute; 
 	content: '';
 	box-sizing: border-box; 
@@ -285,7 +287,8 @@ navbar {
     border-left: 4px solid #ebb94d;
 }
 
-.about_item .sub_title::after {
+.about_item .sub_title::after,
+.merit_item .sub_title::after {
 	position: absolute; 
 	content: '';
 	box-sizing: border-box; 
@@ -426,12 +429,122 @@ navbar {
 }
 
 .about2_blue p br { display: none; }
-	
+
+/*learn*/
+
+.learn .wrapper { 
+	padding-bottom: 3%; 
+	margin: 0 auto; 
+	text-align: center; 
+	color: #000; 
+}
+
+.learn_item p {
+	font-size: 20px; 
+	font-weight: 300; 
+	line-height: 32px; 
+}
+
+.learn_item br { display: none; }
+
+
+.learn_box img {
+	margin: 0 2%; 
+	width: 11rem; 
+}
+
+.learn_text p {
+	font-size: 16px; 
+	font-weight: 600; 
+	line-height: 26px; 
+}
+
+/*merit*/
+
+.merit { background-color: #FEF5E0 } 
+
+.merit .flex_item {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center; 
+}
+
+.merit_item .sub_title h4, 
+.merit_item .sub_title h2 {
+	font-size: 28px; 
+	font-weight: 600; 
+	line-height: 40px; 
+}
+
+.merit .item_title { 
+	color: #EBB94D; 
+	font-size: 20px; 
+	font-weight: 700; 
+	line-height: 32px; 
+	text-align: left; 
+}
+
+.merit .flex_item p { 
+	font-size: 16px; 
+	font-weight: 300; 
+	line-height: 26px; 
+	text-align: left; 
+	letter-spacing: .08rem; 
+}
+
+.merit .item .learnfromfreelance,
+.merit .item .learnfromprojects, 
+.merit .item .actuallyfree { 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	height: 22vh; 
+}
+
+.merit .item .learnfromfreelance { background-image: url('../img/learnfromfreelancer.jpg'); }
+.merit .item .learnfromprojects { background-image: url('../img/learnfromprojects.jpg'); }
+.merit .item .actuallyfree { background-image: url('../img/actuallyfree.jpg'); }
+
+.merit_box {
+	margin: 0 auto; 
+	padding: 3%; 
+	text-align: center; 
+	background-color: #fff; 
+	border: 2px #EBB94D solid; 
+	border-radius: 5px;
+	font-size: 16px; 
+	font-weight: 600; 
+	line-height: 26px; 
+}
+
+.merit_box h4 {
+	color: #ebb94d; 
+	font-size: 28px; 
+	font-weight: 600; 
+	line-height: 45px; 
+}
+
+.merit_box h6 {
+	font-size: 20px; 
+	font-weight: 600; 
+	line-height: 32px; 
+}
+
+.merit_text {
+	margin: 0 auto; 
+	padding: 3%; 
+	text-align: center; 
+	font-size: 14px; 
+	font-weight: 300; 
+	line-height: 22px; 
+}
+
 
 
 /**注１.@media(min-height: 720px) and (max-height: 824px) の、
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
 /**注2. headerのnav_item（logoとp）が完璧に横並びにならない**/
+/**注３.　merit_box p のみをmedium時に全体に広げたいが、分からない**/
 
 /*etc----------------------*/
 @media (max-width: 1050px) {
@@ -607,6 +720,15 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		width: 262px; 
 		height: 18px; 
 	}
+	
+	/*merit*/
+
+	.merit .flex_item {
+		display: flex; 
+		flex-direction: row; 
+		justify-content: center; 
+		align-items: start; 
+	}
 
 	
 }
@@ -775,7 +897,9 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 40px; 
 	}
 
-	.about_item .sub_title::before {
+	.about_item .sub_title::before,
+	.merit_item .sub_title::before 
+	{
 		position: absolute; 
 		content: '';
 		box-sizing: border-box; 
@@ -787,7 +911,9 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		border-left: 4px solid #ebb94d;
 	}
 
-	.about_item .sub_title::after {
+	.about_item .sub_title::after,
+	.merit_item .sub_title::after 
+	{
 		position: absolute; 
 		content: '';
 		box-sizing: border-box; 
@@ -908,10 +1034,99 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	
 	.about2_blue p { margin-bottom: 0 !important; }
 	
+	
+	/*learn*/
+
+	.learn .wrapper { 
+		padding-bottom: 3%; 
+		margin: 0 auto; 
+		text-align: center; 
+		color: #000; 
+	}
+
+	.learn_item p {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
+
+	.learn_item br { display: inline-block; }
+
+
+	.learn_box img {
+		width: 4rem; 
+	}
+
+	.learn_text p {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+	
+	/*merit*/
+
+	.merit .flex_item {
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center; 
+	}
+	
+	.merit_item .sub_title h4 { font-size: 15px; line-height: 21px; }
+ 
+	.merit_item .sub_title h2 { font-size: 18px; }
+	
+
+	.merit .item_title { 
+		font-size: 15px; 
+		line-height: 24px; 
+		text-align: center; 
+	}
+
+	.merit .flex_item p { 
+		font-size: 12px; 
+		line-height: 19px; 
+		text-align: left; 
+		letter-spacing: .08rem; 
+	}
+
+	.merit_box {
+		font-size: 16px; 
+		font-weight: 600; 
+		line-height: 26px; 
+	}
+
+	.merit_box h4 {
+		font-size: 18px; 
+		line-height: 29px; 
+	}
+
+	.merit_box h6 {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
+
+	.merit_text {
+		margin: 0 auto; 
+		padding: 3%; 
+		text-align: center; 
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+	
+	.merit_box p {
+		font-size: 10px; 
+		line-height: 16px; 
+	}
+	
+	.merit_box br { display: inline-block; }
+	
+	.merit_text br { display: inline-block; }
+
+
+	
 }
 
 
 
+/**Displayに反応してしまう。。。泣**/
 /*iPhoneX. iPhone6Plus. Pixel2 XL----------------*/
 @media(min-height: 720px) and (max-height: 824px) {
 	/*concepr*/
@@ -950,6 +1165,9 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	.circle {
 		position: relative; 
 	}
+	
+	/*learn*/
+	
 }
 
 
@@ -1121,6 +1339,87 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		height: 18px; 
 	}
 	
+	.about2_blue {
+		height: auto;
+	}
+	
+	/*learn*/
+	
+	.learn_item p {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+	
+	.learn_item br { display: none; }
+
+	.learn_box img {
+		margin: 0 2%; 
+		width: 8rem; 
+	}
+
+	.learn_text p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+	
+	/*merit*/
+
+	.merit .flex_item {
+		display: flex; 
+		flex-direction: row; 
+		justify-content: center; 
+		align-items: start; 
+	}
+	
+	.merit_item .sub_title h4 { font-size: 16px; line-height: 40px; }
+ 
+	.merit_item .sub_title h2 { font-size: 24px; line-height: 40px; }
+	
+
+	.merit .item_title { 
+		font-size: 14px; 
+		line-height: 26px; 
+		text-align: center; 
+	}
+
+	.merit .flex_item p { 
+		font-size: 14px; 
+		line-height: 22px; 
+		text-align: left; 
+		letter-spacing: .08rem; 
+	}
+
+	.merit_box {
+		font-size: 16px; 
+		font-weight: 600; 
+		line-height: 26px; 
+	}
+
+	.merit_box h4 {
+		font-size: 24px; 
+		line-height: 38px; 
+	}
+
+	.merit_box h6 {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.merit_text {
+		margin: 0 auto; 
+		padding: 3%; 
+		text-align: center; 
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+	
+	.merit_box p {
+		font-size: 14px; 
+	}
+	
+	.merit_text br { display: inline-block; }
+
+			
 }
 
 /*Surface Duo-------------------------------------------*/
@@ -1153,6 +1452,17 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		padding: 8% 2%; 
 	}
 	
+	/*learn*/
+	
+	.learn_box img { width: 5.5rem; }
+	
+	/*merit*/
+
+	.merit .flex_item {
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center; 
+	}
 
 }
 
