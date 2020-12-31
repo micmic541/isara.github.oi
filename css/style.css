@@ -433,6 +433,7 @@ navbar {
 /*learn*/
 
 .learn .wrapper { 
+	background: #fff !important; 
 	padding-bottom: 3%; 
 	margin: 0 auto; 
 	text-align: center; 
@@ -550,6 +551,7 @@ navbar {
 	color: #fff; 
 }
 
+/**　背景固定このままではiOSに効かない
 #member { 
 	background-image: url('../img/teacherbg.jpg'); 
 	background-repeat: no-repeat; 
@@ -557,6 +559,21 @@ navbar {
 	background-position: center; 
 	background-attachment: fixed; 
 }
+**/
+
+#member::before{
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100vh;
+  background:url('../img/teacherbg.jpg') center no-repeat;
+  background-size:cover;
+}
+
 
 .member .sub_title　h2 {
 	font-size: 28px; 
