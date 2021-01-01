@@ -719,6 +719,75 @@ navbar {
 .opinion img { border: 3px #EBB94D solid; vertical-align:bottom;}
 
 
+/*learn2  30h here*/
+
+.learn2 .wrapper { 
+	padding-top: 4%; 
+	padding-bottom: 3%; 
+	margin: 0 auto; 
+	text-align: center; 
+	color: #fff; 
+}
+
+#learn2 { 
+	background-image: url('../img/classbg.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+}
+
+.learn2 .sub_title h2 {
+	font-size: 28px; 
+	line-height: 40px; 
+	font-weight: 600; 
+}
+
+.learn2 .sub_title p {
+	font-size: 16px; 
+	line-height: 26px; 
+	font-weight: 600; 
+}
+
+.learn2 .flex_box {
+	color: #000; 
+}
+
+.learn2 .flex_item {
+	align-items: baseline; 
+	justify-content: center; 
+}
+
+.learn2 .item{
+	margin: 1.5%; 
+	background: #fff; 
+	border: 3px #016EA9 solid; 
+	border-radius: 5px; 
+}
+
+.learn2 .item_title {
+	padding: 1.5% 0; 
+	font-size: 20px; 
+	line-height: 32px; 
+	font-weight: 600; 
+	color: #fff; 
+	background: #016EA9; 
+	border: 3px #016EA9 solid; 
+}
+
+.learn2 .item_title p {
+	text-align: center; 
+	margin: 0 auto; 
+}
+
+.learn2 .item_content p {
+	font-size: 16px; 
+	line-height: 26px; 
+	font-weight: 600; 
+	padding: 1% 0; 
+	border-bottom: 1px #E5E5E5 dotted; 
+}
+
+/**32h 1/1**/
 	
 
 
@@ -731,6 +800,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 /**注４. learn_box のimgが（Devでは良いのに）、携帯でみたらヤバい**/
 /**注５. OGPが上手く機能していない**/
 /**注6. .opinion .flex_itemがなぜ、余白なしにセンター並びできたか、理解していない。写した**/
+/**注７. opinion写真を同じ大きさにどうしてもできない**/
 
 /*etc----------------------*/
 @media (max-width: 1050px) {
@@ -985,7 +1055,26 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	
 	.opinion .inside { padding: 0; }
 
+	/*learn2*/
 
+	.learn2 .sub_title h2 {
+		font-size: 24px; 
+	}
+
+	.learn2 .sub_title p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	.learn2 .item_title {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.learn2 .item_content p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
 	
 }
 
@@ -1456,8 +1545,27 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	
 	.opinion .inside { padding: 0; }
 
+	/*learn2*/
 
+	.learn2 .sub_title h2 {
+		font-size: 18px; 
+	}
 
+	.learn2 .sub_title p {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.learn2 .item_title {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
+
+	.learn2 .item_content p {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+	
 
 	
 }
@@ -1801,6 +1909,30 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-weight: 400; 
 		line-height: 24px; 
 	}
+	
+	/*learn2*/
+
+	.learn2 .sub_title h2 {
+		font-size: 24px; 
+	}
+
+	.learn2 .sub_title p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	.learn2 .item_title {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.learn2 .item_content p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+
+		
 
 }
 
