@@ -800,14 +800,13 @@ navbar {
 
 /**注１.@media(min-height: 720px) and (max-height: 824px) の、
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
-/**注2. headerのnav_item（logoとp）が完璧に横並びにならない**/
 /**注３. ボタンの色実際にひらいたらヤバい、形もちがう（Devでは良いのに）**/
 /**注４. learn_box のimgが（Devでは良いのに）、携帯でみたらヤバい**/
-/**注6. .opinion .flex_itemがなぜ、余白なしにセンター並びできたか、理解していない。写した**/
-/**注７. opinion写真を同じ大きさにどうしてもできない**/
+/**注７. opinion写真3つを同じ大きさにどうしてもできない**/
 
 
 /**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
+/**注6. .opinion .flex_itemがなぜ、余白なしにセンター並びできたか、理解していない。写した**/
 
 /*etc----------------------*/
 @media (max-width: 1050px) {
