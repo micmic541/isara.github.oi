@@ -448,10 +448,15 @@ navbar {
 
 .learn_item br { display: none; }
 
+.learn_box {
+	margin: 40px 0; 
+}
 
 .learn_box img {
-	margin: 0 2%; 
-	width: 11rem; 
+	width: 210px; 
+	height: 180px; 
+	margin-right: 15px; 
+	padding: 0 15px; 
 }
 
 .learn_text p {
@@ -798,9 +803,11 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 /**注2. headerのnav_item（logoとp）が完璧に横並びにならない**/
 /**注３. ボタンの色実際にひらいたらヤバい、形もちがう（Devでは良いのに）**/
 /**注４. learn_box のimgが（Devでは良いのに）、携帯でみたらヤバい**/
-/**注５. OGPが上手く機能していない**/
 /**注6. .opinion .flex_itemがなぜ、余白なしにセンター並びできたか、理解していない。写した**/
 /**注７. opinion写真を同じ大きさにどうしてもできない**/
+
+
+/**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
 
 /*etc----------------------*/
 @media (max-width: 1050px) {
@@ -902,6 +909,15 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	.underline { 
 		font-size: 16px; 
 		line-height: 26px; 
+	}
+	
+	/*learn*/
+	
+	.learn_box img {
+		width: 180px; 
+		height: 150px; 
+		margin-right: 5px; 
+		padding: 0 15px; 
 	}
 	
 	/*about*/
@@ -1395,13 +1411,19 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 15px; 
 		line-height: 24px; 
 	}
+	
+	.learn_box {
+		margin: 25px 0 ;
+	}
+	
+	.learn_box img {
+		width: 80px; 
+		height: 50px; 
+		margin-right: 0; 
+		padding: 0 8px; 
+	}
 
 	.learn_item br { display: inline-block; }
-
-
-	.learn_box img {
-		width: 4rem; 
-	}
 
 	.learn_text p {
 		font-size: 12px; 
@@ -1681,7 +1703,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	/*circle*/
 	
 	.circle::before {
-		display: inline-block; 
+		display: none; 
 		position: absolute;
 		content: 'ABOUT';
 		color: #fff;
@@ -1694,7 +1716,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	}
 
 	.circle::after {
-		position: absolute;
+		position: none;
 		content: '';
 		display: inline-block; 
 		top: -35px;
@@ -1796,12 +1818,14 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 26px; 
 	}
 	
-	.learn_item br { display: none; }
-
 	.learn_box img {
-		margin: 0 2%; 
-		width: 8rem; 
+		width: 150px; 
+		height: 120px; 
+		margin-right: 5px; 
+		padding: 0 15px; 
 	}
+	
+	.learn_item br { display: none; }
 
 	.learn_text p {
 		font-size: 14px; 
@@ -1968,7 +1992,13 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	
 	/*learn*/
 	
-	.learn_box img { width: 5.5rem; }
+	
+	.learn_box img {
+		width: 120px; 
+		height: 90px; 
+		margin-right: 5px; 
+		padding: 0 15px; 
+	}
 	
 	/*merit*/
 
