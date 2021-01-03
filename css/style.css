@@ -793,7 +793,119 @@ navbar {
 }
 
 /**32h 1/1**/
+/*flow*/
+
+.flow { 
+	background: #fff; 
+	color: #000; 
+}
+
+.flowtailpc {
+	margin: 0 auto !important; 
+}
+
+.flowtailpc .text_box {
+	border-radius: 7px; 
+	background: #FEF5E0; 
+}
+
+.flowleft img {
+	max-width: 100px; 
+	max-height: 100px; 
+}
+
+.flowleft { text-align: center; }
+
+.flowtailpc .flowline { 
+	margin: 0 auto; 
+	height: auto; 
+	width: 70%; 
+}
+
+.flowtailsm { display: none; }
+
+/**change in responsive*/
+
+.flow .sub_title h2 {
+	font-size: 28px; 
+	line-height: 40px; 
 	
+	font-weight: 600; 
+}
+
+.flowleft p {
+	font-size: 18px; 
+	line-height: 29px; 
+	
+	font-weight: 600; 
+	letter-spacing: .1rem; 
+}
+
+.flowright p {
+	font-size: 15px; 
+	line-height: 26px;
+
+	font-weight: 600; 
+}
+
+.flowright small {
+	font-size: 14px; 
+	line-height: 22px; 
+	
+	font-weight: 300; 
+	letter-spacing: .1rem; 
+}
+
+/*bangkok*/
+
+.bangkok .wrapper { 
+	padding-top: 4%; 
+	padding-bottom: 3%; 
+	color: #fff; 
+}
+
+#bangkok { 
+	background-image: url('../img/bangkokbg.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+}
+
+/**change in responsive*/
+
+.bangkok_item h2 {
+	text-align: left; 
+	font-size: 24px; 
+	line-height: 40px; 
+	
+	font-weight: 600; 
+}
+
+.bangkok_item small {
+	font-size: 14px; 
+	line-height: 22px; 
+	
+	font-weight: 300; 
+}
+
+.bangkok_item li {
+	font-size: 16px; 
+	line-height: 26px; 
+	
+	padding: 1% 0; 
+	font-weight: 600; 
+}
+
+.bangkok_item p {
+	font-size: 20px; 
+	line-height: 32px; 
+	
+	font-weight: 600; 
+}
+
+/**38h 1/2 */
+
+
 
 
 
@@ -802,6 +914,7 @@ navbar {
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
 /**注３. ボタンの色実際にひらいたらヤバい、形もちがう（Devでは良いのに）**/
 /**注７. opinion写真3つを同じ大きさにどうしてもできない**/
+/**注８. btn-link色変えたい黒に、変えれないい**/
 
 
 /**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
@@ -1090,6 +1203,42 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 14px; 
 		line-height: 22px; 
 	}
+	
+	/*flow*/
+	
+	.flow .sub_title h2 {
+		font-size: 24px; 
+	}
+
+	.flowright p {
+		font-size: 14px; 
+		line-height: 22px;
+	}
+
+	.flowright small {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+	
+	/*bangkok*/
+
+	.bangkok_item small {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.bangkok_item li {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	.bangkok_item p {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+
+
 	
 }
 
@@ -1591,6 +1740,87 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 19px; 
 	}
 	
+	/*flow*/
+	
+	
+	.flow .sub_title h2 {
+		font-size: 18px; 
+	}
+
+	.card-header p {
+		font-size: 14px; 
+		font-weight: 600; 
+		line-height: 17px;
+	}
+	
+	.card-body p {
+		font-size: 12px; 
+		font-weight: 600; 
+		line-height: 19px; 
+		letter-spacing: 0.1rem; 
+	}
+
+	.card-body small {
+		font-size: 12px; 
+		font-weight: 300; 
+		line-height: 19px; 
+		letter-spacing: 0.1rem; 
+	}
+	
+	.flowtailpc { display: none; }
+	
+	.flowtailsm { 
+		display: inline-block;
+		padding-right: 0 !important; 
+		padding-left: 0 !important; 
+	}
+	
+	.accordion .card { 
+		border: 0px none !important;
+		padding: 0 !important;
+	}
+	
+	.card .btn p { color: #000 !important; }
+	
+	.card .btn-link:hover,
+	.card .btn-link:link, 
+	.card .btn-link:active,
+	.card .btn-link:visited
+	{ color: #000 !important; }
+	
+	.accordion .card-header, 
+	.accordion .card-body {
+		border: 0px none !important;
+		background: #FEF5E0 !important; 
+	}
+	
+	.accordion img { max-width: 35px; max-height: 35px; }
+	
+	/*bangkok*/
+	
+	#bangkok { 
+		background-image: url('../img/bangkokbgsp.jpg'); 
+	}
+	
+	.bangkok_item h2 {
+		text-align: center; 
+		font-size: 18px; 
+	}
+
+	.bangkok_item small {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.bangkok_item li {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.bangkok_item p {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
 
 	
 }
@@ -1960,7 +2190,35 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 14px; 
 		line-height: 22px; 
 	}
+	
+	/*flow*/
+	
+	.flowtailsm { display: none; }
+	
+	.flowtailpc { display: inline; }
 
+	
+	/*bangkok*/
+	
+	.bangkok_item h2 {
+		text-align: left; 
+		font-size: 24px; 
+	}
+
+	.bangkok_item small {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.bangkok_item li {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	.bangkok_item p {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
 
 		
 
