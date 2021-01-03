@@ -428,6 +428,8 @@ navbar {
 	line-height: 32px; 
 }
 
+.about2_blue p { margin-bottom: 0 !important; }
+
 .about2_blue p br { display: none; }
 
 /*learn*/
@@ -914,7 +916,6 @@ navbar {
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
 /**注３. ボタンの色実際にひらいたらヤバい、形もちがう（Devでは良いのに）**/
 /**注７. opinion写真3つを同じ大きさにどうしてもできない**/
-/**注８. btn-link色変えたい黒に、変えれないい**/
 
 
 /**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
