@@ -20,12 +20,13 @@ img { width: 100%; }
 	line-height: 51px; 
 }
 
-btn { 
+button{ 
+	border: 0 none !important; 
 	border-radius: 100vh; 
 	background-color: #DA6B64; 
 }
 
-btn:hover {
+button:hover {
 	background-color: #d84940; 
 }
 
@@ -78,13 +79,13 @@ navbar {
 
 .header_item space { margin-top: 3%; }
 
-.header btn {
+.header button {
 	position: relative; 
 	width: 317px; 
 	height: 44px; 
 }
 
-.header btn::before {
+.header button::before {
 	position: absolute; 
 	content: "お問い合わせ / 資料請求はこちら";
 	font-weight: 400; 
@@ -95,7 +96,6 @@ navbar {
 	top: 24%;
 }
 
-.header btn::before: hover { opacity: .8; }
 
 
 /*orange*/
@@ -950,13 +950,13 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	
 	.navbar .navbar-brand { width: 105px; height: 45px; }
 	
-	.header btn {
+	.header button {
 		width: 243px; 
 		height: 46px; 
 	}
 	
 	
-	.header btn::before {
+	.header button::before {
 		position: absolute; 
 		content: "お問い合わせ / 資料請求はこちら";
 		font-weight: 400; 
@@ -980,10 +980,13 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 23px; 
 	}
 	
-	.orange btn {
+	.orange button {
+		height: 81px; 
+	}
+	
+	.orange button a {
 		font-size: 18px; 
 		line-height: 29px; 
-		height: 81px; 
 	}
 	
 	.text_box2 {
@@ -1273,14 +1276,14 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 17px;
 	}
 
-	.header btn {
+	.header button {
 		border-radius: 0 !important; 
 		position: relative; 
 		width: 84px; 
 		height: 59px; 
 	}
 
-	.header btn::before {
+	.header button::before {
 		border-radius: 0 !important; 
 		position: absolute; 
 		content: "資料請求";
@@ -1292,7 +1295,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		top: 68%;
 	}
 	
-	.header btn::after {
+	.header button::after {
 		border-radius: 0 !important; 
 		position: absolute; 
 		content: '';
@@ -1322,11 +1325,11 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 20px; 
 	}
 	
-	.orange btn {
-		font-size: 1rem; 
-		line-height: 29px; 
+	.orange button {
 		height: 81px; 
 	}
+	
+	.orange button a { font-size: 1rem !important;  line-height: 29px; }
 	
 	.text_box2 {
 		font-size: 15px; 
