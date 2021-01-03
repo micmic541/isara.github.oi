@@ -24,7 +24,7 @@ button{
 	border: 0 none !important; 
 	border-radius: 100vh; 
 	background-color: #DA6B64; 
-	-webkit-appearance: none;
+	-webkit-appearance: none !important;
 }
 
 button:hover {
