@@ -701,9 +701,9 @@ navbar {
 }
 
 .opinion .flex_item {
-		flex-direction: column; 
-		justify-content: center; 
-		align-items: center; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
 }
 
 .opinion .inside { padding: 0 4%; }
@@ -907,6 +907,7 @@ navbar {
 }
 
 /**38h 1/2 */
+/*present*/
 
 
 
@@ -922,6 +923,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 /**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
 /**注6. .opinion .flex_itemがなぜ、余白なしにセンター並びできたか、理解していない。写した**/
 /**注４. learn_box のimgが（Devでは良いのに）、携帯でみたらヤバい→remではなく、pxを使い、img-fluid解除**/
+/**注８. acoordion のbuttonが反応してオレンジ・赤色に→buttonをdivに変える**/
 
 /*etc----------------------*/
 @media (max-width: 1050px) {
