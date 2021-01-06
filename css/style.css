@@ -909,7 +909,82 @@ navbar {
 /**38h 1/2 */
 /*present*/
 
+.presentboxsm { display: none !important; }
 
+.present { 
+	background-color: #F7C23C; 
+}
+
+.present space { color: #fff; }
+
+.presentboxpc .item {
+	display: inline-block; 
+	width: 250px; 
+	height: 250px; 
+	background-color: #fff; 
+	border-radius: 50%; 
+}
+
+/*change in responsive design*/
+
+.present .sub_title h2 {
+	font-weight: 600 !important; 
+	
+	font-size: 28px; 
+	line-height: 40px; 
+}
+
+.present .sub_title p {
+	font-weight: 600; 
+	
+	font-size: 16px; 
+	line-height: 26px; 
+}
+
+.present .flex_box::before {
+	position: relative; 
+	content: 'iSaraは『実質０円』！更なる特典もあります。'; 
+	box-sizing: border-box; 
+	font-weight: 600; 
+	z-index: 30; 
+	padding: 1%; 
+	background-color: #F7C23C; 
+	
+	top: -5%; 
+	left: 26%; 
+	font-size: 28px; 
+	line-height: 38px; 
+}
+
+.present .flex_box {
+	flex-grow: 1; 
+	border: 2px #fff solid; 
+	z-index: 0;
+	
+	height: 53vh; 
+}
+
+.presentboxpc .title {
+	padding-top: 4%; 
+	color: #F7C23C; 
+	font-weight: 300; 
+	
+	font-size: 24px; 
+	line-height: 38px; 
+}
+
+.presentboxpc .item p {
+	padding-top: 6%; 
+	margin: 0 auto; 
+	font-weight: 600; 
+	letter-spacing: .1rem; 
+	
+	font-size: 14px; 
+	line-height: 22px; 
+}
+
+	
+	
 
 
 
@@ -1244,8 +1319,36 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 26px; 
 	}
 
+	/*present*/
+	
+	.presentboxsm { display: none !important; }
 
+	/*change in responsive design*/
 
+	.present .sub_title h2 {
+		font-size: 24px; 
+	}
+
+	.present .sub_title p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	.present .flex_box::before {
+		content: 'iSaraは『実質０円』！\A更なる特典もあります。'; 
+		text-align: center;
+		vertical-align: middle;
+		white-space: pre;
+		top: -2%; 
+		left: 32%; 
+		font-size: 24px; 
+	}
+
+	.present .flex_box {
+		height: 126vh; 
+	}
+	
+	
 	
 }
 
@@ -1832,7 +1935,63 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 15px; 
 		line-height: 24px; 
 	}
+	
+	/*present*/
+	
+	.presentboxpc { display: none !important; }
 
+	.presentboxsm { display: inline-block !important; }
+	
+	.present .sub_title h2 {
+		font-size: 18px; 
+	}
+
+	.present .sub_title p {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.present .flex_box::before {
+		content: 'iSaraは『実質０円』！\A更なる特典もあります。'; 
+		text-align: center;
+		vertical-align: middle;
+		white-space: pre;
+		top: -8%; 
+		left: 18%; 
+		font-size: 18px; 
+	}
+
+	.present .flex_box {
+		flex-grow: 1; 
+		border: 2px #fff solid; 
+		z-index: 0;
+		
+		height: 53vh; 
+	}
+
+	.presentboxsm .circletitle {
+		padding-top: 1%; 
+		color: #F7C23C; 
+		font-weight: 600; 
+		width: 60px; 
+		height: 60px; 
+		border-radius: 50%; 
+		background-color: #fff; 
+		
+		font-size: 12px; 
+		line-height: 38px; 
+	}
+
+	.presentboxsm .item p {
+		color: #fff; 
+		font-weight: 600; 
+		letter-spacing: .1rem; 
+		
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	
 	
 }
 
@@ -2231,8 +2390,58 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 26px; 
 	}
 
-		
+	/*present*/
+	
+	.presentboxsm { display: inline-block !important; }
+	
+	.presentboxpc { display: none !important; }
+	
+	.present .sub_title h2 {
+		font-size: 18px; 
+	}
 
+	.present .sub_title p {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.present .flex_box::before {
+		content: 'iSaraは『実質０円』！更なる特典もあります。'; 
+		text-align: center;
+		top: -4%; 
+		left: 24%; 
+		font-size: 18px; 
+	}
+
+	.present .flex_box {
+		height: 32vh; 
+	}
+
+	.presentboxsm .circletitle {
+		padding-top: 1%; 
+		color: #F7C23C; 
+		font-weight: 600; 
+		width: 60px; 
+		height: 60px; 
+		border-radius: 50%; 
+		background-color: #fff; 
+		
+		font-size: 12px; 
+		line-height: 38px; 
+	}
+
+	.presentboxsm .item p {
+		color: #fff; 
+		font-weight: 600; 
+		letter-spacing: .1rem; 
+		
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	
+	
+	
 }
 
 /*Surface Duo-------------------------------------------*/
