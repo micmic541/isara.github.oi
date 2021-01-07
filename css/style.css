@@ -859,9 +859,11 @@ navbar {
 	letter-spacing: .1rem; 
 }
 
-/*bangkok*/
+/*bangkok bg*/
+/*concept2 bg*/
 
-.bangkok .wrapper { 
+.bangkok .wrapper,
+.concept2 .wrapper { 
 	padding-top: 4%; 
 	padding-bottom: 3%; 
 	color: #fff; 
@@ -869,6 +871,13 @@ navbar {
 
 #bangkok { 
 	background-image: url('../img/bangkokbg.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+}
+
+#concept2 {
+	background-image: url('../img/specialdetail.jpg'); 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center; 
@@ -906,7 +915,6 @@ navbar {
 	font-weight: 600; 
 }
 
-/**38h 1/2 */
 /*present*/
 
 .presentboxsm { display: none !important; }
@@ -983,16 +991,67 @@ navbar {
 	line-height: 22px; 
 }
 
+/*concept2*/
+
+.concept2_title {
+	position: relative; 
+}
+
+/*change in responsive*/
+
+.concept2 .sub_title::before {
+	position: absolute; 
+	content: '';
+	box-sizing: border-box; 
+	top: 0; 
+	left: 0; 
+	border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
 	
+	width: 50px; 
+	height: 50px; 
+}
+
+.concept2 .sub_title::after {
+	position: absolute; 
+	content: '';
+	box-sizing: border-box; 
+	bottom: 0; 
+	right: 0; 
+	border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+	
+	width: 50px; 
+	height: 50px; 
+}
+
+.concept2 p {
+	font-weight: 600; 
+	
+	font-size: 20px; 
+	line-height: 32px; 
+}
+
+.concept2 .title, 
+.concept2 .sub_title h2 {
+	font-weight: 600; 
+	
+	font-size: 28px; 
+	line-height: 45px; 
+}
+
+.concept2 .textt { display: none; }
 	
 
 
-
+/**43h **/
 
 /**注１.@media(min-height: 720px) and (max-height: 824px) の、
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
 /**注３. iOSでボタンの色実際にひらいたらヤバい、形もちがう（Devでは良いのに）**/
 /**注７. opinion写真3つを同じ大きさにどうしてもできない**/
+/**注８. present. flex_box. mediaquery for iphone5...
+53vh以下にしたいけど、したらiphone5ではみでる。Or　justify-content aroundにしたいけどできない。**/
 
 
 /**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
@@ -1348,6 +1407,18 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		height: 126vh; 
 	}
 	
+	/*concept2*/
+	
+	.concept2 p {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+
+	.concept2 .title, 
+	.concept2 .sub_title h2 {
+		font-size: 24px; 
+		line-height: 38px; 
+	}
 	
 	
 }
@@ -1940,7 +2011,9 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	
 	.presentboxpc { display: none !important; }
 
-	.presentboxsm { display: inline-block !important; }
+	.presentboxsm { 
+		display: inline-block !important; 
+	}
 	
 	.present .sub_title h2 {
 		font-size: 18px; 
@@ -1965,12 +2038,14 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		flex-grow: 1; 
 		border: 2px #fff solid; 
 		z-index: 0;
-		
+
 		height: 53vh; 
 	}
 
 	.presentboxsm .circletitle {
-		padding-top: 1%; 
+		float: left; 
+		padding-top: 3%; 
+		padding-left: 4%; 
 		color: #F7C23C; 
 		font-weight: 600; 
 		width: 60px; 
@@ -1980,6 +2055,10 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		
 		font-size: 12px; 
 		line-height: 38px; 
+	}
+	
+	.presentboxsm .item {
+		display: inline-block; 
 	}
 
 	.presentboxsm .item p {
@@ -1991,6 +2070,32 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 22px; 
 	}
 
+	
+	/*concept2*/
+	
+	.concept2 .sub_title::before {
+		width: 30px; 
+		height: 30px; 
+	}
+
+	.concept2 .sub_title::after {
+		width: 30px; 
+		height: 30px; 
+	}
+	
+	.concept2 p {
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.concept2 .title, 
+	.concept2 .sub_title h2 {
+		font-size: 18px; 
+		line-height: 29px; 
+	}
+	
+	.concept2 .textt { display: inline; }
+	
 	
 	
 }
@@ -2414,11 +2519,12 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	}
 
 	.present .flex_box {
-		height: 32vh; 
+		height: 28vh; 
 	}
 
 	.presentboxsm .circletitle {
-		padding-top: 1%; 
+		padding-top: 15%;
+		padding-left: 17%; 
 		color: #F7C23C; 
 		font-weight: 600; 
 		width: 60px; 
@@ -2429,8 +2535,21 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 12px; 
 		line-height: 38px; 
 	}
-
+	
+	.presentboxsm .circlet {
+		width: 13%; 
+		float: left; 
+		padding: 0; 
+		margin: 0 auto; 
+	}
+	
+	.presentboxsm .item {
+		display: inline-block !important; 
+	}
+	
 	.presentboxsm .item p {
+		padding: 12px 0; 
+		overflow: hidden;
 		color: #fff; 
 		font-weight: 600; 
 		letter-spacing: .1rem; 
@@ -2495,6 +2614,35 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	/*opinion*/
 	
 	.opinion_box .sub_title small br { display: inline; }
+	
+	/*present*/
+	
+	.present .flex_box::before {
+		content: 'iSaraは『実質０円』！更なる特典もあります。'; 
+		text-align: center;
+		top: -8%; 
+		left: 12%; 
+		font-size: 18px; 
+	}
+	
+	.present .flex_box {
+		height: 34vh; 
+	}
+	
+	.presentboxsm .circletitle {
+		float: left; 
+		padding-top: 2.5%; 
+		padding-left: 3%; 
+		color: #F7C23C; 
+		font-weight: 600; 
+		width: 60px; 
+		height: 60px; 
+		border-radius: 50%; 
+		background-color: #fff; 
+		
+		font-size: 12px; 
+		line-height: 38px; 
+	}
 
 }
 
