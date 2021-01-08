@@ -1041,7 +1041,32 @@ navbar {
 }
 
 .concept2 .textt { display: none; }
+
+/*message*/
+/*change in responsive*/
+
+.message .sub_title h2 {
+	font-weight: 600; 
 	
+	font-size: 28px; 
+	line-height: 40px; 
+}
+
+.message .sub_title p {
+	font-weight: 600; 
+	
+	font-size: 20px; 
+	line-height: 32px; 
+}
+
+.message .flex_box {
+	font-weight: 400; 
+	letter-spacing: .1rem; 
+	
+	font-size: 14px; 
+	line-height: 22px; 
+}
+
 
 
 /**43h **/
@@ -1420,6 +1445,18 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 38px; 
 	}
 	
+	/*message*/
+	/*change in responsive*/
+
+	.message .sub_title h2 {
+		font-size: 24px; 
+	}
+
+	.message .sub_title p {
+		font-size: 16px; 
+		line-height: 26px; 
+	}
+		
 	
 }
 
@@ -2096,8 +2133,28 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	
 	.concept2 .textt { display: inline; }
 	
+	/*message*/
+	/*change in responsive*/
+
+	.message .sub_title h2 {
+		font-size: 18px; 
+	}
+
+	.message .sub_title p {
+		font-size: 15px; 
+		line-height: 24px; 
+	}
 	
+	.message .flex_box {
+		padding-top: 0 !important; 
+		padding-right: 0 !important; 
+		padding-left: 0 !important; 
+	}
 	
+	.message .contents, .message .img {
+		padding-right: 0 !important; 
+		padding-left: 0 !important; 
+	}
 }
 
 
