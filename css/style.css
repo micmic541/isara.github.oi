@@ -2,7 +2,7 @@
 
 /*required*/
 
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; webkit-box-sizing: border-box; }
 
 html { font-size: 100%; }
 
@@ -31,7 +31,7 @@ button:hover {
 	background-color: #d84940; 
 }
 
-a { color: #fff; text-decoration: none; }
+a { display: block; color: #fff; text-decoration: none; -webkit-appearance: none !important; }
 
 a:hover { color: #fff; text-decoration: none;}
 
@@ -85,6 +85,8 @@ navbar {
 	width: 317px; 
 	height: 44px; 
 }
+
+.header button a { display: block; }
 
 .header button::before {
 	position: absolute; 
@@ -1059,6 +1061,8 @@ navbar {
 	line-height: 32px; 
 }
 
+.message .sub_title br { display: none; }
+
 .message .flex_box {
 	font-weight: 400; 
 	letter-spacing: .1rem; 
@@ -1067,9 +1071,53 @@ navbar {
 	line-height: 22px; 
 }
 
+/*form*/
+
+.form {
+	background-color: #EBB94D; 
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+	border: 1px #fff solid; 
+	border-radius: 5px; 
+	padding: 15px; 
+}
+
+textarea { height: 14vh; }
+
+.form button { height: 8vh; }
+
+/*change in responsive*/
+
+.form .sub_title h2 {
+	letter-spacing: .1rem; 
+	font-weight: 600; 
+	
+	font-size: 28px; 
+	line-height: 40px; 
+}
 
 
-/**43h **/
+.form .sub_title p {
+	letter-spacing: .1rem; 
+	font-weight: 600; 
+	
+	font-size: 16px; 
+	line-height: 26px; 
+}
+
+.form button a {
+    font-weight: 600;
+	letter-spacing: 1rem;
+
+	font-size: 24px;
+	line-height: 45px;
+}
+
+
+/**45.5h **/
 
 /**注１.@media(min-height: 720px) and (max-height: 824px) の、
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
@@ -1077,6 +1125,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 /**注７. opinion写真3つを同じ大きさにどうしてもできない**/
 /**注８. present. flex_box. mediaquery for iphone5...
 53vh以下にしたいけど、したらiphone5ではみでる。Or　justify-content aroundにしたいけどできない。**/
+/**注９. headerのbuttonにhrefでformに行くようにしたが、右下にしか、きかない、、、なぜ？**/
 
 
 /**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
@@ -1456,7 +1505,24 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 16px; 
 		line-height: 26px; 
 	}
-		
+	
+	/*change in responsive*/
+
+	.form .sub_title h2 {
+		font-size: 24px; 
+	}
+
+
+	.form .sub_title p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
+	.form button a {
+		font-size: 22px;
+		line-height: 45px;
+	}
+			
 	
 }
 
@@ -2145,6 +2211,8 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		line-height: 24px; 
 	}
 	
+	.message .sub_title br { display: inline; }
+	
 	.message .flex_box {
 		padding-top: 0 !important; 
 		padding-right: 0 !important; 
@@ -2154,6 +2222,25 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	.message .contents, .message .img {
 		padding-right: 0 !important; 
 		padding-left: 0 !important; 
+	}
+	
+	/*change in responsive*/
+
+	.form .sub_title h2 {
+		letter-spacing: .1rem; 
+		font-size: 18px; 
+	}
+
+
+	.form .sub_title p {
+		letter-spacing: .1rem; 
+		font-size: 12px; 
+		line-height: 19px; 
+	}
+
+	.form button a {
+		font-size: 22px;
+		line-height: 45px;
 	}
 }
 
