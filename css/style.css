@@ -561,16 +561,17 @@ navbar {
 	color: #fff; 
 }
 
-/**　背景固定このままではiOSに効かない
+
 #member { 
 	background-image: url('../img/teacherbg.jpg'); 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center; 
-	background-attachment: fixed; 
 }
-**/
 
+
+
+/**背景固定
 #member::before{
   content:"";
   display:block;
@@ -582,8 +583,7 @@ navbar {
   height:100vh;
   background:url('../img/teacherbg.jpg') center no-repeat;
   background-size:cover;
-}
-
+}  **/
 
 .member .sub_title　h2 {
 	font-size: 28px; 
@@ -1203,7 +1203,7 @@ textarea { height: 14vh; }
 
 
 
-/**45.5h **/
+/**55h **/
 
 /**注１.@media(min-height: 720px) and (max-height: 824px) の、
 circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displayのcircleが編集不可能**/
