@@ -1116,6 +1116,83 @@ textarea { height: 14vh; }
 	line-height: 45px;
 }
 
+/*question*/
+	
+.question_box .card-header {
+	background-color: #fff !important; 
+	border: 1px #E5E5E5 solid !important; 
+}
+
+.question_box .accordion .card-body {
+	border-top: 1px #E5E5E5 solid !important; 
+}
+
+.question_box .card {
+	border: none !important; 
+	border-radius: 5px; 
+	margin: 2% 0; 
+}
+
+.flow .accordion .card { 
+	border: 0px none !important;
+	padding: 0 !important;
+}
+	
+.card .btn p { color: #000 !important; }
+	
+.card .btn-link:hover,
+.card .btn-link:link, 
+.card .btn-link:active,
+.card .btn-link:visited
+	{ color: #000 !important; }
+	
+.fa-question-circle {
+	color: rgb(1,110,169); 
+}
+	
+
+/*change in responsive*/
+
+.questions .sub_title h2 {
+	font-weight: 600 !important; 
+	
+	font-size: 28px; 
+	line-height: 40px; 
+}
+
+.card-header p {
+	font-weight: 600; 
+	
+	font-size: 20px; 
+	line-height: 22px;
+}
+	
+.card-body p {
+	font-weight: 600; 
+	letter-spacing: 0.1rem; 
+	
+	font-size: 16px; 
+	line-height: 26px; 
+}
+
+/*footer*/
+
+.footer {
+	background: rgb(236,236,236); 
+}
+
+.copy small, .designers small {
+	font-weight: 300; 
+	font-size: 10px; 
+	line-height: 16px;
+	letter-spacing: .1rem; 
+}
+
+.copy a, .designers a { display: inline-block; color: #337ab7; text-decoration: none; -webkit-appearance: none !important; }
+
+.copy a:hover, .designers a:hover { color: darkblue; text-decoration: underline;}
+
+
 
 /**45.5h **/
 
@@ -1126,6 +1203,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 /**注８. present. flex_box. mediaquery for iphone5...
 53vh以下にしたいけど、したらiphone5ではみでる。Or　justify-content aroundにしたいけどできない。**/
 /**注９. headerのbuttonにhrefでformに行くようにしたが、右下にしか、きかない、、、なぜ？**/
+/**注１０. questionsのcard-headerにborder-bottomがつかない**/
 
 
 /**注５. OGPが上手く機能していない →　画像絶対パスで指定しないと表示されない**/
@@ -1522,7 +1600,24 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 22px;
 		line-height: 45px;
 	}
-			
+	
+	/*questions*/
+	/*change in responsive*/
+
+	.questions .sub_title h2 {
+		font-size: 24px; 
+	}
+
+	.card-header p {
+		font-size: 16px; 
+		line-height: 18px;
+	}
+		
+	.card-body p {
+		font-size: 14px; 
+		line-height: 22px; 
+	}
+
 	
 }
 
@@ -2031,6 +2126,8 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	/*flow*/
 	
 	
+	
+	
 	.flow .sub_title h2 {
 		font-size: 18px; 
 	}
@@ -2063,7 +2160,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		padding-left: 0 !important; 
 	}
 	
-	.accordion .card { 
+	.flow .accordion .card { 
 		border: 0px none !important;
 		padding: 0 !important;
 	}
@@ -2076,13 +2173,13 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 	.card .btn-link:visited
 	{ color: #000 !important; }
 	
-	.accordion .card-header, 
-	.accordion .card-body {
+	.flow .accordion .card-header, 
+	.flow .accordion .card-body {
 		border: 0px none !important;
 		background: #FEF5E0 !important; 
 	}
 	
-	.accordion img { max-width: 35px; max-height: 35px; }
+	.flow .accordion img { max-width: 35px; max-height: 35px; }
 	
 	/*bangkok*/
 	
@@ -2242,6 +2339,7 @@ circle::afterとbeforeが、謎にdisplayのcssに適応するせいで、displa
 		font-size: 22px;
 		line-height: 45px;
 	}
+	
 }
 
 
