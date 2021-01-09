@@ -1160,6 +1160,8 @@ textarea { height: 14vh; }
 	line-height: 40px; 
 }
 
+.questions .card { text-align: left; }
+
 .card-header p {
 	font-weight: 600; 
 	
