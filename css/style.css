@@ -84,6 +84,7 @@ navbar {
 	position: relative; 
 	width: 317px; 
 	height: 44px; 
+	-webkit-appearance: none !important; 
 }
 
 .header button a { display: block; }
@@ -133,12 +134,13 @@ navbar {
 
 .text_box2 br { display: none; }
 
-.orange btn {
+.orange_btn {
 	font-size: 28px; 
 	font-weight: 600;
 	line-height: 45px; 
 	width: 1030px; 
 	height: 97px; 
+	-webkit-appearance: none !important; 
 }
 
 .sns_box p, .sns_box　a {
