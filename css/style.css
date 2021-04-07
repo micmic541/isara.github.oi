@@ -1,4 +1,5 @@
 @charset="utf-8"; 
+/***修正済2021-04-07***/
 
 /*required*/
 
@@ -256,40 +257,6 @@ navbar {
 		border-radius: 50%;
 		z-index: 0;
 }
-
-
-
-/**--注１. 
-	.circle {
-		position: relative; 
-	}
-
-	.circle::before {
-		display: none; 
-		position: absolute;
-		content: 'ABOUT';
-		color: #fff;
-		font-size: .95rem;
-		line-height: 80px;
-		font-weight: 400;
-		z-index: 30;
-		top: -37px;
-		left: 46.3%;
-	}
-
-	.circle::after {
-		display: none; 
-		position: absolute;
-		content: '';
-		top: -35px;
-		left: 45%;
-		padding: 2.8%;
-		background-color: rgb(236, 185, 77);
-		border-radius: 50%;
-		z-index: 0;
-	}
-		
---**/
 
 /*about*/
 
@@ -1259,9 +1226,6 @@ textarea { height: 14vh; }
 
 #page-top.scroll { opacity: 100; visibility: visible; }
 
-/**55h **/
-
-/**注３. iOSでボタンの色実際にひらいたらヤバい、形もちがう（Devでは良いのに）**/
 
 /*etc----------------------*/
 @media (max-width: 1050px) {
