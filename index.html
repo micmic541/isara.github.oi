@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ja">
 	<head>
@@ -30,7 +31,7 @@
 	<div class="body_wrapper">
 	
 		<header>
-			<section class="header">
+			<section id="header" class="header">
 				<nav class="navbar d-block bg-white fixed-top">
 				  <div class="nav_container d-flex flex-row">
 					<div class="nav_item1 pb-2 pb-md-2 pb-lg-0 pl-3 pt-sm-1 d-flex flex-lg-row flex-md-row flex-column-reverse align-items-lg-end align-items-md-end align-items-baseline">
@@ -88,10 +89,12 @@
 				</div><!--/.text_box3-->
 			</div><!--/.wrapper-->
 		</div><!--/.concept id-->
-			<div class="circle"></div>
 		</section><!--/.concept---------------------------->
 		
 		<section class="about">
+			<div class="abouticon">
+				<div class="circle"></div>
+			</div><!--/.abouticon-->
 			<div class="wrapper container-fluid">
 				<div class="about_item text-center">
 					<h2 class="sub_title pb-3">ノマドエンジニア育成講座<br>iSara[イサラ]とは？</h2>
@@ -1021,6 +1024,9 @@
 		</section><!--/.questions------------------------->
 		
 	</div><!--/.body_wrapper-->
+		
+		<p id="page-top"><a href="#header"><i class="fas fa-chevron-up"></i></a></p>
+		
 		<footer class="footer pt-5">
 			<div class="wrapper container-fluid text-center mx-auto">
 				<div class="copy d-flex flex-column">
@@ -1038,6 +1044,8 @@
 			</div><!--/.designers-->
 		</footer><!--/.footer---------------------------->
 	<!-- Optional JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="animation.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
